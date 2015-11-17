@@ -1,0 +1,12 @@
+{
+    "jcr:primaryType" : "sling:Folder",
+    "sling:resourceType" : "slingui/demo",
+    "jcr:title": "todo application",
+    "title": "todo application from repository",
+    "applicationVersion" : "0.0.1 Development",
+    "description" : "use this as dscription",
+    "child1" : {
+       "property1" : "value 1"
+    },
+    "todos" : {}
+}

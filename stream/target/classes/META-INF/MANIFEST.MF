@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1446861803985
+Build-Jdk: 1.7.0_55
+Built-By: stas
+Bundle-ClassPath: .,jackson-core-asl-1.9.5.jar,jackson-mapper-asl-1.9.5.
+ jar
+Bundle-ManifestVersion: 2
+Bundle-Name: Playing around with sling and jetty
+Bundle-SymbolicName: io.senol.slingui.stream
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Embed-Dependency: jackson-core-asl;scope=compile,jackson-mapper-asl
+Embedded-Artifacts: jackson-core-asl-1.9.5.jar;g="org.codehaus.jackson";
+ a="jackson-core-asl";v="1.9.5",jackson-mapper-asl-1.9.5.jar;g="org.code
+ haus.jackson";a="jackson-mapper-asl";v="1.9.5"
+Export-Package: io.senol.slingui.stream;version="0.0.1";uses:="io.senol.
+ slingui.stream.api,org.eclipse.jetty.websocket.api",io.senol.slingui.st
+ ream.api;version="0.0.1"
+GraniteSiteRepository-Id: nexus-granitesite
+GraniteSiteRepository-URL: http://nexus.bsl.eur.adobe.com/content/sites/
+ granitesite
+Import-Package: io.senol.slingui.stream.api;version="[0.0,1)",javax.xml.
+ datatype,javax.xml.namespace,javax.xml.parsers,org.eclipse.jetty.websoc
+ ket.api;version="[9.1,10)",org.joda.time,org.joda.time.format,org.w3c.d
+ om,org.w3c.dom.bootstrap,org.w3c.dom.ls,org.xml.sax,org.eclipse.jetty.w
+ ebsocket.server;version="[9.1,10)"
+ReleaseRepository-Id: nexus-dev-releases
+ReleaseRepository-Name: Adobe Dev Releases
+ReleaseRepository-URL: http://nexus.bsl.eur.adobe.com/content/repositori
+ es/releases
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Sling-Bundle-Resources: /var/classes
+Sling-Initial-Content: SLING-INF/libs/slingui;path:=/libs/slingui;overwr
+ ite:=true
+SnapshotRepository-Id: nexus-dev-snapshots
+SnapshotRepository-Name: Adobe Dev Snapshots
+SnapshotRepository-URL: http://nexus.bsl.eur.adobe.com/content/repositor
+ ies/dev-snapshots
+Tool: Bnd-3.0.0.201509101326

@@ -1,0 +1,6 @@
+io/senol/slingui/stream/api/MessageType.class
+io/senol/slingui/stream/StreamResource.class
+io/senol/slingui/stream/ResourceEvent.class
+io/senol/slingui/stream/StreamResourceService.class
+io/senol/slingui/stream/ResourceEvent$EventType.class
+io/senol/slingui/stream/api/StreamingServer.class

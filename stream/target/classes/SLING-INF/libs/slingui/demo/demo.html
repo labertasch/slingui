@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-sling-ui-connection="legacy" data-sling-ui="${resource.path}">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+    <script src="jquery-1.11.3.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="bootstrap-theme.min.css">
+    <script src="handlebars.min.js"></script>
+    <title>${properties.jcr:title}</title>
+    <style>
+        body {
+            padding-top:50px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">SlingUI Demo Todo Application</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+<div class="container">
+
+    <div class="starter-template" id="header">
+        <h1>${properties.title} <small>${properties.applicationVersion}</small></h1>
+        <p class="lead">${properties.description}</p>
+    </div>
+
+</div><!-- /.container -->
+
+
+<script id="header-template" type="text/x-handlebars-template">
+    <h1>{{properties.title}} HB<small>{{properties.applicationVersion}}</small></h1>
+    <p class="lead">{{properties.description}}</p>
+</script>
+
+<script src="/libs/slingui/client/stream.js"></script>
+<script src="/libs/slingui/demo/demo.js"></script>
+</body>
+</html>
